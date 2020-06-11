@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "oalU1RkYCklm3eXHdXOOHrPl/nPyziwu6V0/BDwbtSRoCpB7JHHht5sIhuINI7Wg/aa7yS/v/0KxABZboGA5OA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\batuh\\OneDrive\\Masaüstü\\oop2_BatuhanGorgel160101029-OrkunOzturk160101009\\TazedirektMobilUygulama\\TazedirektMobilUygulama\\TazedirektMobilUygulama\\TazedirektMobilUygulama.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\batuh\\.nuget\\packages\\dltoolkit.forms.controls.flowlistview\\2.0.11\\dltoolkit.forms.controls.flowlistview.2.0.11.nupkg.sha512",
+    "C:\\Users\\batuh\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\batuh\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\batuh\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\batuh\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\batuh\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\batuh\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\batuh\\.nuget\\packages\\xam.plugins.settings\\4.1.0-beta\\xam.plugins.settings.4.1.0-beta.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TazedirektMobilUygulama.Views.Ürünlerimiz">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout BackgroundColor="White">
+                    <StackLayout  Orientation="Horizontal">
+                        <Label Text="Meyve, Sebze"  FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"   />
+                        <Label BackgroundColor="Transparent" TextColor="Green" Text="Tümünü Gör"  FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+
+
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal"
+                BindableLayout.ItemsSource="{Binding Items}">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer 
+                Command="{Binding ItemTappedCommand}" 
+                NumberOfTapsRequired="1"/>
+                            </StackLayout.GestureRecognizers>
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame BackgroundColor="White"    Margin="5" WidthRequest="120">
+                                        <StackLayout>
+                                            <Image Source="{Binding ImageSource}"/>
+                                            <Label HorizontalOptions="Fill"    VerticalOptions="Fill"     XAlign="Center"   YAlign="Center"   Text="{Binding Ürünİsmi}"/>
+                                            <Label HorizontalOptions="Fill"    VerticalOptions="Fill"     XAlign="Center"   YAlign="Center" TextColor="LawnGreen" FontSize="Small"  Text="{Binding Satıcı}"/>
+                                            <Label HorizontalOptions="Fill"    VerticalOptions="Fill"     XAlign="Center"   YAlign="Center" TextColor="Green" FontSize="Medium" HorizontalTextAlignment="End"  Text="{Binding ÜrünFiyat}"/>
+                                            <Button HorizontalOptions="Fill"    VerticalOptions="Fill"    Text="Sepete Ekle" FontSize="Caption" TextColor="Green" BackgroundColor="LightGreen"/>
+                                        </StackLayout>
+                                    </Frame>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </ScrollView>
+                    <StackLayout  Orientation="Horizontal">
+                        <Label Text="Et Ürünleri"  FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"   />
+                        <Label BackgroundColor="Transparent" TextColor="Green" Text="Tümünü Gör"  FontAttributes="Bold" HorizontalOptions="EndAndExpand" FontSize="Medium" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal"
+                BindableLayout.ItemsSource="{Binding Items2}">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer 
+                Command="{Binding ItemTappedCommand}" 
+                NumberOfTapsRequired="1"/>
+                            </StackLayout.GestureRecognizers>
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame BackgroundColor="White"    Margin="5" WidthRequest="120">
+                                        <StackLayout>
+                                            <Image Source="{Binding ImageSource2}"/>
+                                            <Label HorizontalOptions="Fill"    VerticalOptions="Fill"     XAlign="Center"   YAlign="Center"  Text="{Binding Ürünİsmi2} "/>
+                                            <Label HorizontalOptions="Fill"    VerticalOptions="Fill"     XAlign="Center"   YAlign="Center"  TextColor="LawnGreen" FontSize="Small" Text="{Binding Satıcı2}"/>
+                                            <Label HorizontalOptions="Fill"    VerticalOptions="Fill"     XAlign="Center"   YAlign="Center" TextColor="Green" FontSize="Medium" HorizontalTextAlignment="End" Text="{Binding ÜrünFiyat2}"/>
+                                            <Button HorizontalOptions="Fill"    VerticalOptions="Fill"    Text="Sepete Ekle" FontSize="Caption" TextColor="Green" BackgroundColor="LightGreen"/>
+                                        </StackLayout>
+                                    </Frame>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+
+                    </ScrollView>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TazedirektMobilUygulama.Views.TazedirektBesiÇiftliği">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+                <Frame CornerRadius="0" IsClippedToBounds="True" Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Image Source="Besi1.jpeg" Aspect="AspectFill" />
+
+
+                </Frame>
+                <Frame CornerRadius="0" IsClippedToBounds="True" Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Image Source="Besi2.jpeg" Aspect="AspectFill" />
+
+
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

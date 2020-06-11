@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             mc:Ignorable="d"
+             x:Class="TazedirektMobilUygulama.Views.Üreticilerimiz">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout BackgroundColor="White">
+                    <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Image Source="Ureticelerimiz.jpeg" Aspect="AspectFill" />
+                    </Frame>
+
+
+                    <ScrollView >
+                        <StackLayout >
+
+                            <flv:FlowListView FlowColumnCount="2"   
+                SeparatorVisibility="Default"   
+                HasUnevenRows="True"  
+                FlowItemTappedCommand="{Binding ItemTappedCommand}"   
+                FlowItemsSource="{Binding Items}">
+
+                                <flv:FlowListView.FlowColumnTemplate>
+                                    <DataTemplate>
+                                        <Frame BackgroundColor="White"    Margin="5">
+                                            <StackLayout>
+                                                <Image Source="{Binding ImageSource}"/>
+                                                <Label HorizontalOptions="FillAndExpand"    VerticalOptions="FillAndExpand"     FontSize="Medium" TextColor="White" BackgroundColor="LightGreen"  Text="{Binding Ürünİsmi} "/>
+
+                                            </StackLayout>
+                                        </Frame>
+                                    </DataTemplate>
+                                </flv:FlowListView.FlowColumnTemplate>
+                            </flv:FlowListView>
+                        </StackLayout>
+                    </ScrollView>
+
+                    <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Image Source="Ureticilerimiz2.jpeg" Aspect="AspectFill" />
+                    </Frame>
+
+                    <ScrollView >
+                        <StackLayout >
+
+                            <flv:FlowListView FlowColumnCount="2"   
+                SeparatorVisibility="Default"   
+                HasUnevenRows="True"  
+                FlowItemTappedCommand="{Binding ItemTappedCommand}"   
+                FlowItemsSource="{Binding Items2}">
+
+                                <flv:FlowListView.FlowColumnTemplate>
+                                    <DataTemplate>
+                                        <Frame BackgroundColor="White"    Margin="5">
+                                            <StackLayout>
+                                                <Image Source="{Binding ImageSource2}"/>
+                                                <Label HorizontalOptions="FillAndExpand"    VerticalOptions="FillAndExpand"     FontSize="Medium" TextColor="White" BackgroundColor="LightGreen"  Text="{Binding Ürünİsmi2} "/>
+
+                                            </StackLayout>
+                                        </Frame>
+                                    </DataTemplate>
+                                </flv:FlowListView.FlowColumnTemplate>
+                            </flv:FlowListView>
+                        </StackLayout>
+                    </ScrollView>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
